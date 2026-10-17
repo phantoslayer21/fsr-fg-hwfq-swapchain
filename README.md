@@ -1,7 +1,9 @@
-# fgswap
+# fsr-fg-hwfq-swapchain
 
 > **Status: work in progress.** Early research build. It works in a test harness and is about to get its first
 > real-game playtests. Expect rough edges (see [Known gaps](#known-gaps)). Not a release.
+
+**FSR frame-generation swapchain, paced by the hardware flip queue.** The DLL it builds is `fgswap.dll` ("fgswap" below).
 
 fgswap is a drop-in replacement for the **frame-generation swapchain** of AMD FSR (including FSR 4 / "Redstone" ML frame
 generation) on Windows / D3D12. It keeps AMD's ML frame generation exactly as it is and replaces only the part that
