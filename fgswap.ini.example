@@ -1,0 +1,21 @@
+; fgswap.ini - optional, next to fgswap.dll. All keys are optional.
+[fgswap]
+; spin (default) | queue (hardware flip queue) | early | amd (AMD's own swapchain)
+pacing=spin
+; early mode: present this many ms before each frame's slot
+early_ms=1.5
+; spin mode: busy-wait window before each present, microseconds
+spin_us=500
+; queue mode: sync interval for each queued frame; 0 = refresh rate / output rate
+queue_interval=0
+; normal | above_normal | highest | time_critical
+presenter_priority=highest
+; real frames the game may run ahead of the presenter (1-4)
+max_queued_frames=2
+; tearing presents when the game presents with sync interval 0 (windowed/borderless)
+allow_tearing=1
+; fgswap.log / per-present CSV fgswap_presents.csv
+log=1
+present_log=0
+; proxy role only: AMD's original DLL, relative to this folder
+; original=fgswap\amd_fidelityfx_framegeneration_dx12.dll

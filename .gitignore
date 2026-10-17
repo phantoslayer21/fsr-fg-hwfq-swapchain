@@ -1,0 +1,9 @@
+bin/
+obj/
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.log
+*.etl
+fgswap_presents.csv
